@@ -40,6 +40,7 @@ const nodeTypes = {
 const edgeTypes = {
   "custom-edge": CustomEdge,
 };
+let valueLoad = undefined;
 
 const Mindmaps = ({ mapID, nodeDetail, edgeDetail }) => {
   const reactFlowWrapper = useRef(null);
@@ -119,16 +120,16 @@ const Mindmaps = ({ mapID, nodeDetail, edgeDetail }) => {
     // [screenToFlowPosition, setEdges, setNodes]
   );
 
-  useLayoutEffect(() => {
-    const local = JSON.parse(localStorage.getItem("dataMindmap"));
-    // console.log("useLayoutEffect", local);
-    // const { nodes, edges } = local;
+  // useLayoutEffect(() => {
+  //   const local = JSON.parse(localStorage.getItem("dataMindmap"));
+  //   // console.log("useLayoutEffect", local);
+  //   // const { nodes, edges } = local;
 
-    // console.log(nodes);
-    // console.log(edges);
-    setNodes(local?.nodes);
-    setEdges(local?.edges);
-  }, []);
+  //   // console.log(nodes);
+  //   // console.log(edges);
+  //   setNodes(local?.nodes);
+  //   setEdges(local?.edges);
+  // }, []);
 
   useEffect(() => {
     localStorage.setItem("dataMindmap", JSON.stringify({ nodes, edges }));

@@ -9,6 +9,7 @@ export const middleware = async (req) => {
   if (auth) {
     const userEmail = auth?.user?.email;
     const userAvatar = auth?.user?.picture;
+
     response.headers.set("x-api-key", userEmail);
     response.headers.set("x-avatar", userAvatar);
 
@@ -20,6 +21,12 @@ export const middleware = async (req) => {
     //   // httpOnly: true,
     //   maxAge: 86400,
     // });
+  }
+
+  if (pathname.startsWith("/my-mindmap") && !auth) {
+    //request.nextUrl.origin__https://localhost:3000
+    const urlLogin = `${req.nextUrl.origin}/api/auth/login`;
+    return NextResponse.redirect(urlLogin);
   }
 
   if (pathname.startsWith("/api/auth/logout")) {
