@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Icons/Option</title>
+  <g id="Icons/Option" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+    <g id="Group">
+      <g transform="translate(2.000000, 3.000000)">
+        <path d="M11.5,17 L17,11.5 L17,11.5 L11.5,17 Z" id="Path" stroke="#4170FF" stroke-width="2.5" stroke-linejoin="round" transform="translate(14.250000, 14.250000) scale(1, -1) translate(-14.250000, -14.250000) "></path>
+        <path d="M13,13 L17.75,13 C17.8880712,13 18,13.1119288 18,13.25 L18,18 L18,18" id="Path" stroke="#4170FF" stroke-width="2.5" stroke-linejoin="round" transform="translate(15.500000, 15.500000) scale(1, -1) translate(-15.500000, -15.500000) "></path>
+        <path d="M0,9 L6.10050506,9 C7.95702049,9 9.73749788,8.26250212 11.0502525,6.94974747 L17,1 L17,1" id="Path" stroke="#4170FF" stroke-width="2.5"></path>
+        <path d="M13,0 L17.75,0 C17.8880712,-2.53632657e-17 18,0.111928813 18,0.25 L18,5 L18,5" id="Path" stroke="#4170FF" stroke-width="2.5" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </g>
+</svg>
