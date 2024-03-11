@@ -2,6 +2,7 @@
     width: 30px;
     height: 14px;
     border-radius: 3px;
+    border-width: 2px;
     background-color: #FF338F;
   }
   
@@ -20,7 +21,9 @@
     align-items: center;
     display: flex;
     border-width: 2px;
+    border-color: #ff338f;
     font-weight: 700;
+    /* background: greenyellow; */
   }
   
   .react-flow .react-flow__edge path,

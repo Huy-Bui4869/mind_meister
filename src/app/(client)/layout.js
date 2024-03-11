@@ -3,12 +3,11 @@ import Footer from "~/components/Footer";
 
 const clientLayout = async ({ children }) => {
   return (
-    <main>
+    <>
       <Header />
-      <div style={{ height: "64px" }}></div>
-      {children}
+      <main className="pt-16">{children}</main>
       <Footer />
-    </main>
+    </>
   );
 };
 

@@ -20,6 +20,7 @@ function CustomNodeChild({ id, data, isConnectable }) {
 
   return (
     <div
+      // className="bg-red-600 w-[300px] h-20"
       onDoubleClick={handleDbClick}
       onBlur={() => {
         setCheck(false);
@@ -33,7 +34,7 @@ function CustomNodeChild({ id, data, isConnectable }) {
           isConnectable={isConnectable}
         />
       )}
-      <div className="d-flex justify-content-center">
+      <div className="flex justify-center">
         {check ? (
           <input
             id="text"
@@ -41,12 +42,13 @@ function CustomNodeChild({ id, data, isConnectable }) {
             onChange={handleChange}
             value={name}
             //class nodrag _ ngăn chặn việc kéo trong trường đầu vào và cho phép chọn văn bản.
-            className="nodrag bg-transparent border border-solid border-while rounded outline-0 text-red"
+            //  border border-solid border-while  rounded
+            className="bg-blue-500 nodrag bg-transparent outline-0 text-gray-800 dark:text-gray-100"
             style={{ textAlign: "center", width: "94%" }}
             autoFocus
           />
         ) : (
-          <span>{name}</span>
+          <span className="text-gray-800 dark:text-gray-100">{name}</span>
         )}
       </div>
       <Handle

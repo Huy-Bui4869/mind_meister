@@ -89,7 +89,7 @@ const MindmapHeader = ({ mapID, titleDetail, describeDetail }) => {
         <div>
           <input
             type="text"
-            className="block text-3xl md:text-4xl font-medium my-2 px-2 focus:outline-0"
+            className="block text-3xl md:text-4xl font-medium text-gray-800 dark:text-gray-100 bg-transparent my-2 px-2 focus:outline-0"
             name="title"
             value={form.title}
             onChange={handleChange}
@@ -97,7 +97,7 @@ const MindmapHeader = ({ mapID, titleDetail, describeDetail }) => {
           <input
             type="text"
             name="desc"
-            className="px-2 mt-2 w-full focus:outline-0"
+            className="text-gray-800 dark:text-gray-100 bg-transparent px-2 mt-2 w-full focus:outline-0"
             value={form.desc}
             onChange={handleChange}
           />

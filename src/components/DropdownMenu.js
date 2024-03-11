@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ToggalTheme from "./ToggalTheme";
 
-const DropdownMenu = ({ userEmail, userImage }) => {
+const DropdownMenu = ({ userImage }) => {
   const [show, setShow] = useState(false);
 
   const dropdownItem = [
@@ -34,9 +34,8 @@ const DropdownMenu = ({ userEmail, userImage }) => {
           <div className="fixed inset-0" onClick={() => setShow(false)}></div>
 
           <ul
-            className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-2 ring-black ring-opacity-5 focus:outline-none"
+            className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-gray-800 shadow-lg ring-2 ring-black dark:ring-gray-700 ring-opacity-5 focus:outline-none"
             tabIndex="-1"
-            // onBlur={() => setShow(false)}
           >
             <li>
               <ToggalTheme />
@@ -45,7 +44,7 @@ const DropdownMenu = ({ userEmail, userImage }) => {
               <li key={i}>
                 <Link
                   href={href}
-                  className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
+                  className="flex items-center gap-2 px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
                 >
                   <Image src={`./${icon}`} width={14} height={14} alt="." />
                   <span>{name}</span>

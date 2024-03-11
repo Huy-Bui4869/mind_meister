@@ -24,16 +24,20 @@ const ModalDelete = ({ id, onHidden, api }) => {
         className="fixed inset-0 bg-[#21252979]"
         onClick={() => onHidden()}
       ></div>
-      <div className="max-w-[500px] w-full border border-slate-500 rounded-lg bg-white z-10 mt-28">
-        <div className="flex justify-between border-b border-slate-300 p-4">
-          <h1 className="text-xl font-medium">Modal Delate</h1>
+      <div className="max-w-[500px] w-full border border-slate-500 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 z-10 mt-28">
+        <div className="flex justify-between border-b border-slate-300 dark:border-gray-700 p-4">
+          <h1 className="text-xl font-medium text-gray-800 dark:text-gray-100">
+            Modal Delate
+          </h1>
           <button className="text-xl" onClick={() => onHidden()}>
-            X
+            <i className="fa-regular fa-circle-xmark text-gray-500 dark:text-gray-400"></i>
           </button>
         </div>
-        <div className="p-4 border-b border-slate-300 pb-2">
-          <p className="text-base mb-4">Bạn có chắc chắn muốn xóa?</p>
-          <span className="text-sm">
+        <div className="p-4 border-b border-slate-300 dark:border-gray-700 pb-2">
+          <p className="text-base mb-4 text-gray-500 dark:text-gray-400">
+            Bạn có chắc chắn muốn xóa?
+          </p>
+          <span className="text-sm text-gray-500 dark:text-gray-400">
             ID Mindmap: <span className="italic">{id}</span>
           </span>
         </div>

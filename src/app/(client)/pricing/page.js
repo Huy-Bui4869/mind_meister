@@ -47,7 +47,7 @@ const Price = () => {
           <ul className="mb-7 font-medium text-gray-500">
             <li className="flex text-lg mb-2">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"
@@ -59,7 +59,7 @@ const Price = () => {
             </li>
             <li className="flex text-lg mb-2">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"
@@ -71,7 +71,7 @@ const Price = () => {
             </li>
             <li className="flex text-lg">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"
@@ -122,7 +122,7 @@ const Price = () => {
           <ul className="mb-10 font-medium text-xl">
             <li className="flex mb-6">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"
@@ -134,7 +134,7 @@ const Price = () => {
             </li>
             <li className="flex mb-6">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"
@@ -146,7 +146,7 @@ const Price = () => {
             </li>
             <li className="flex">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"
@@ -196,7 +196,7 @@ const Price = () => {
           <ul className="mb-7 font-medium text-gray-500">
             <li className="flex text-lg mb-2">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"
@@ -208,7 +208,7 @@ const Price = () => {
             </li>
             <li className="flex text-lg mb-2">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"
@@ -220,7 +220,7 @@ const Price = () => {
             </li>
             <li className="flex text-lg">
               <Image
-                src="/pricing_check_grey.svg"
+                src="/check.svg"
                 width={24}
                 height={28}
                 alt="checkIcon"

@@ -19,29 +19,39 @@ const TableMap = () => {
   return (
     <>
       <table className="border border-collapse border-slate-500 w-full max-w-10/12 my-9">
-        <thead>
+        <thead className="dark:bg-slate-900 text-gray-800 dark:text-gray-100">
           <tr>
-            <th width="5%" className="border border-slate-500 p-2">
+            <th
+              width="5%"
+              className="border border-slate-500 dark:border-gray-700 p-2"
+            >
               STT
             </th>
-            <th className="border border-slate-500">Tên</th>
-            <th width="30%" className="border border-slate-500 p-2">
+            <th className="border border-slate-500 dark:border-gray-700">
+              Tên
+            </th>
+            <th
+              width="30%"
+              className="border border-slate-500 dark:border-gray-700 p-2 "
+            >
               Thời gian
             </th>
             <th
               width="15%"
               colSpan={2}
-              className="border border-slate-500 text-center py-2"
+              className="border border-slate-500 dark:border-gray-700 text-center py-2"
             >
               Hành động
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="dark:bg-slate-800 text-gray-500 dark:text-gray-400">
           {isLoading ? (
             <tr>
               <td colSpan={10} className="text-center py-2">
-                <span>Loading...</span>
+                <span className="text-gray-500 dark:text-gray-400">
+                  Loading...
+                </span>
               </td>
             </tr>
           ) : (
@@ -50,7 +60,7 @@ const TableMap = () => {
                 <>
                   {dataAll?.map(({ id, title, created_at }, i) => (
                     <tr key={i}>
-                      <td className="border border-slate-600 text-center p-2">
+                      <td className="border border-slate-600 p-2 text-center">
                         {i + 1}
                       </td>
                       <td className="border border-slate-600 p-2">{title}</td>

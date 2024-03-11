@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <ThemeProviderContext>
       <html lang="en">
         <UserProvider>
-          <body>
+          <body className="dark:bg-slate-900">
             {children}
             <ToastContainer />
           </body>

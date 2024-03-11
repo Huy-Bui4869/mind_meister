@@ -48,8 +48,8 @@ const Navigation = () => {
               <li key={index}>
                 <Link
                   href={path}
-                  className={`text-gray-600 hover:bg-primary hover:text-white block rounded-full px-3 py-2 text-sm font-medium ${
-                    isActive(path) && "bg-primary text-white"
+                  className={`text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white block rounded-full px-3 py-2 text-sm font-medium ${
+                    isActive(path) && "bg-primary text-white dark:text-white"
                   }`}
                 >
                   {name}

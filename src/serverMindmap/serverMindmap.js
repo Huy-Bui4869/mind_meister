@@ -1,6 +1,5 @@
 const API = process.env.NEXT_PUBLIC_API;
 
-//Lấy danh sách mindmap theo email
 export const getMindmapAllByEmail = async (email) => {
   const response = await fetch(`${API}?userEmail=${email}`, {
     mode: "no-cors",
@@ -9,7 +8,6 @@ export const getMindmapAllByEmail = async (email) => {
   return data;
 };
 
-//Tạo mindmap mới
 export const handleCreateMindmap = async (data) => {
   const response = await fetch(API, {
     method: "POST",
@@ -21,7 +19,6 @@ export const handleCreateMindmap = async (data) => {
   return response.ok;
 };
 
-//Update mindmap id
 export const handleUpdateMindmap = async (id, data) => {
   const response = await fetch(`${API}/${id}`, {
     method: "PUT",
@@ -33,9 +30,8 @@ export const handleUpdateMindmap = async (id, data) => {
   return response.ok;
 };
 
-//Xóa mindmap
 export const handleDeleteMindmap = async (id) => {
-  const response = await fetch(`${NEXT_PUBLIC_API}/${id}`, {
+  const response = await fetch(`${API}/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",

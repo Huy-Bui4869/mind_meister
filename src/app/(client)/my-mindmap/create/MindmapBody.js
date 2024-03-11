@@ -40,7 +40,6 @@ const nodeTypes = {
 const edgeTypes = {
   "custom-edge": CustomEdge,
 };
-let valueLoad = undefined;
 
 const Mindmaps = ({ mapID, nodeDetail, edgeDetail }) => {
   const reactFlowWrapper = useRef(null);
@@ -137,9 +136,9 @@ const Mindmaps = ({ mapID, nodeDetail, edgeDetail }) => {
 
   return (
     <div
-      className="py-5 w-full h-500 wrapper"
-      ref={reactFlowWrapper}
+      className="py-5 w-full wrapper"
       style={{ height: "600px" }}
+      ref={reactFlowWrapper}
     >
       <ReactFlow
         nodes={nodes}
@@ -161,8 +160,7 @@ const Mindmaps = ({ mapID, nodeDetail, edgeDetail }) => {
           variant="cross"
           gap={20}
           size={2}
-          className="bg-gray-500"
-          // style={{ backgroundColor: "gray" }}
+          className="bg-gray-400 dark:bg-gray-800"
         />
       </ReactFlow>
     </div>

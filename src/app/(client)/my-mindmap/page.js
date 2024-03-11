@@ -10,7 +10,7 @@ const MindmapPage = () => {
   return (
     <div className="container px-4 pt-8 mx-auto">
       <div className="text-start">
-        <h1 className="text-3xl md:text-4xl font-medium my-2">
+        <h1 className="text-3xl md:text-4xl font-medium my-2 text-gray-800 dark:text-gray-100">
           Mindmap của tôi
         </h1>
         <div className="py-4">
