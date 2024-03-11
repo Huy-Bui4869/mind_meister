@@ -19,7 +19,9 @@
     "react-toastify": "^10.0.4",
     "reactflow": "^11.10.1",
     "swr": "^2.2.4",
-    "uuid": "^9.0.1"
+    "uncors": "^0.2.2",
+    "uuid": "^9.0.1",
+    "vercel": "^32.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
