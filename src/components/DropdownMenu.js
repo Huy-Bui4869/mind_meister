@@ -30,7 +30,6 @@ const DropdownMenu = ({ userImage }) => {
       </div>
       {show && (
         <>
-          {/* top-16 */}
           <div className="fixed inset-0" onClick={() => setShow(false)}></div>
 
           <ul
